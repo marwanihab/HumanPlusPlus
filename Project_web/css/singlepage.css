@@ -1,0 +1,80 @@
+@font-face{
+	font-family: "alternate_gothic";
+	src:url("alternategothicno2bt_regular/AlternateGothicNo2BT-Regular.otf");
+}
+
+.standardFont{
+	font-family: "AlternateGothicNo2BT-Regular";
+}
+
+.rparallax {
+	height: 100%; 
+	background-color: rgb(235,193,16);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+.rbody{
+	font-family: "AlternateGothicNo2BT-Regular";
+	margin-top: -7.5%;
+	height: fixed;
+	color: rgb(0,0,0);
+	background-color:rgb(235,193,16);
+	opacity: 1;
+	padding-bottom: 100px;
+	
+}
+
+
+.rheader{
+	font-size: 36px;
+	margin-left: 2.5%;
+	font-family: "AlternateGothicNo2BT-Regular";
+	color: black;
+	font-weight: 900;
+}
+
+.rparg{
+	font-family: "AlternateGothicNo2BT-Regular";
+	font-size: 18px;
+	color:black;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+
+.rteam{
+	/*background-color:rgb(197,196,199);
+*/	font-family: "AlternateGothicNo2BT-Regular";
+	text-align: center;
+	font-size: large;
+    font-weight: 500;
+}
+
+.rimg{
+	border-radius: 50%;
+	background-image: url('defaultperson.jpg');	
+	vertical-align: middle;
+}
+
+#rinfo{
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	color: rgb(235,193,16);
+}
+
+
+
+.rcaption{
+	position: relative;
+}

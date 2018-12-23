@@ -1,0 +1,28 @@
+
+
+body
+{
+   font-family: "AlternateGothicNo2BT-Regular";
+	background-color: rgb(235,193,16);
+	margin-top: 100px;
+	color: black;
+}
+
+.w3-card-4{
+	background-color:black;
+	color:rgb(235,193,16);
+}
+a.p{
+	text-decoration:none;
+}
+
+
+
+p:hover{color: rgb(235,193,16);
+    text-decoration:none;}
+p{color: white;}
+
+p{
+	padding-bottom: 5px;
+	width: 100%;
+}

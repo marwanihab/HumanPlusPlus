@@ -1,0 +1,309 @@
+
+.yYellow_background
+{
+background-color: rgb(235,193,16);
+ /* background-color: rgb(105,105,105);*/
+
+}
+
+/*---------------------------CLOUD--------------------------------------------*/
+/*
+Credits to: http://thecodeplayer.com/walkthrough/make-a-simple-cloud-in-css3 
+*/
+
+body {
+  background: #ccc;
+}
+
+
+.yCloud {
+  width: 350px; height: 120px;
+  
+  background: #f2f9fe;
+  background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  
+  position: relative;
+  margin: 120px auto 20px;
+}
+
+.yCloud:after, .yCloud:before {
+  content: '';
+  position: absolute;
+  background: #f2f9fe;
+  z-index: -1
+}
+
+.yCloud:after {
+  width: 100px; height: 100px;
+  top: -50px; left: 50px;
+  
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.yCloud:before {
+  width: 180px; height: 180px;
+  top: -90px; right: 50px;
+  
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+}
+
+.yCircle
+{
+   border-radius: 50%;
+   max-width: 58%;
+}
+
+
+/*-------------------------------------FONT DEFINITIONS----------------------------------------------------*/
+
+
+@font-face
+{
+font-family:"alternate_gothic" ;
+src:url("alternategothicno2bt_regular/AlternateGothicNo2BT-Regular.otf");
+}
+
+.yStandardFont
+{
+    font-family: "alternate_gothic", PT Serif;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.ySideMargins
+{
+  margin-left: 5%;
+  margin-right:5%;
+}
+
+.ySideMargins2
+{
+  margin-left: 22%;
+  margin-right:5%;
+}
+
+.yTopMargin
+{
+  margin-top:5%;
+}
+
+.yTopMargin2
+{
+  margin-top:10%;
+}
+
+.yButtomMargin
+{
+  margin-bottom:5%;
+}
+
+.yLeftMargin
+{
+  margin-left: 30%;
+}
+
+/*---------------------------------------------ARROW---------------------------------------------------------------*/
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 20px;
+}
+
+.yUp {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-top: -15%;
+    box-shadow: 8px 7px 14px white;
+}
+
+.yDown {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: -15%;
+    box-shadow: 8px 7px 14px white;
+}
+
+.yRight {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.yLeft {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.yCenter
+{
+text-align: center;
+vertical-align: middle;
+line-height: 40px; 
+}
+
+/*------------------------------------------------TALK BUBBLE----------------------------------------------------------------------*/
+
+/*
+.yTalkBubble {
+   width: 314px;
+   height: 244px;
+   background: rgb(232,246,254);
+   background-color: black;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+   overflow: hidden;
+}
+.yTalkBubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 144px;
+   width: 0;
+   height: 0;
+   border-top: 17px solid transparent;
+   border-right: 55px solid rgb(232,246,254);
+   border-right: 55px solid black;
+   border-bottom: 13px solid transparent;
+   overflow: hidden;
+} */
+
+
+.yTalkbubble {
+   width: 314px;
+   height: auto;
+   background-color: black;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+.yTalkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid black;
+   border-bottom: 13px solid transparent;
+}
+/*------------------------------------------------------TV SCREEN----------------------------------------------------------------------------------*/
+.yTv {
+  width: auto px;
+  height: auto;
+  /*background: white;*/
+  background-color: black;
+  border-radius: 28px;
+}
+
+/*----------------------------------------------------------------FLAG-------------------------------------------------------------------------------*/
+.yFlag {
+  width: 340px;
+  height: auto;
+  padding-top: 15px;
+  position: relative;
+  background-color: black;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px;
+}
+.yFlag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid rgb(235,193,16);
+  border-left: 173px solid transparent;
+  border-right: 173px solid transparent;
+}
+
+
+/*----------------------------------------------------------HIDE STUFF----------------------------------------------------------------------*/
+
+#yBlogs
+{
+  display: none;
+}
+#yEvents
+{
+  display: none;
+}
+#yNews
+{
+  display: none;
+}
+#yProjects
+{
+  display: none;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.yTitle
+{
+  font-size:25px ;
+  color:rgb(235,193,16);
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+#yHomeImage
+{
+ 
+}
+
+.imgEvents
+{
+  width: 70%;
+  height: auto;
+}
+
+.whiteFont
+{
+  color: white;
+}
+
+.black
+{
+  color: black;
+  font-size: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#yScroll2,#yScroll4,#yScroll3,#yScroll1,#project1, #project2, #project3, #project4, .blog1,.blog2, .bog3, .blog4, #event1, #event2, #event3, #event4, #news1, #news2,#news3,#news4
+{
+   display: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.Label_Post
+{
+  font-size: 40px;
+  margin-top: 10%;
+}
